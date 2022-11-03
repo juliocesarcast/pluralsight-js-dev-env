@@ -1,10 +1,10 @@
 import 'whatwg-fetch';
 
 export function getUsers() {
-   return getUsers('users');
+   return get('users');
 }
 
-function get(url) { //eslint-disable-line
+function get(url) {
    return fetch(url).then(onSuccess, onError);
 }
 
